@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightThemeTerminal from 'starlight-theme-terminal'
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,6 +18,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Browser Performance Handbook',
+			plugins: [starlightThemeTerminal()],
 			customCss: ['./src/styles/amber-slate.css', './src/styles/custom.css'],
 			sidebar: [
 				{
