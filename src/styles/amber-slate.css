@@ -1,0 +1,264 @@
+/*
+  Amber Slate - Starlight Theme
+  Warm parchment light mode
+  Graphite dark mode
+*/
+
+
+/* =================================
+   LIGHT MODE
+================================= */
+
+:root {
+
+  /* Backgrounds */
+  --sl-color-bg: #f4edcf;
+  --sl-color-bg-nav: #eee5c5;
+  --sl-color-bg-sidebar: #efe6c8;
+
+  /* Text */
+  --sl-color-white: #2d2a23;
+  --sl-color-gray-1: #403a30;
+  --sl-color-gray-2: #625b4c;
+  --sl-color-gray-3: #827965;
+  --sl-color-gray-4: #a99c7c;
+  --sl-color-gray-5: #cfc29b;
+  --sl-color-gray-6: #e8ddbb;
+
+
+  /* Accent */
+  --sl-color-accent-low: #ead49a;
+  --sl-color-accent: #a86b00;
+  --sl-color-accent-high: #704500;
+
+
+  /* Borders */
+  --sl-color-hairline: #d8cba5;
+
+
+  /* Inline code */
+  --sl-color-bg-inline-code: #ddd7c5;
+
+
+  /* Custom cards */
+  --amber-card: #e8e3d5;
+  --amber-card-hover: #ddd7c7;
+
+}
+
+
+/* =================================
+   DARK MODE
+================================= */
+
+:root[data-theme="dark"] {
+
+  /* Backgrounds */
+  --sl-color-bg: #242424;
+  --sl-color-bg-nav: #2c2c2c;
+  --sl-color-bg-sidebar: #292929;
+
+
+  /* Text */
+  --sl-color-white: #eee3bd;
+  --sl-color-gray-1: #d8cda8;
+  --sl-color-gray-2: #aaa07f;
+  --sl-color-gray-3: #82785e;
+  --sl-color-gray-4: #615943;
+  --sl-color-gray-5: #454139;
+  --sl-color-gray-6: #343434;
+
+
+  /* Accent */
+  --sl-color-accent-low: #473817;
+  --sl-color-accent: #dcae42;
+  --sl-color-accent-high: #ffd978;
+
+
+  /* Borders */
+  --sl-color-hairline: #464238;
+
+
+  /* Inline code */
+  --sl-color-bg-inline-code: #333333;
+
+
+  /* Cards */
+  --amber-card: #353535;
+  --amber-card-hover: #3d3d3d;
+
+}
+
+
+/* =================================
+   TYPOGRAPHY
+================================= */
+
+:root {
+
+  --sl-font:
+    Inter,
+    "Segoe UI",
+    system-ui,
+    sans-serif;
+
+  --sl-font-mono:
+    "JetBrains Mono",
+    "Fira Code",
+    monospace;
+
+}
+
+
+.sl-markdown-content {
+
+  line-height: 1.75;
+
+}
+
+
+.sl-markdown-content h1,
+.sl-markdown-content h2,
+.sl-markdown-content h3 {
+
+  letter-spacing: -0.025em;
+
+}
+
+
+
+/* =================================
+   CARDS
+================================= */
+
+.card,
+.sl-card {
+
+  background:
+    var(--amber-card);
+
+  border:
+    1px solid var(--sl-color-hairline);
+
+  border-radius:
+    14px;
+
+}
+
+
+.card:hover,
+.sl-card:hover {
+
+  background:
+    var(--amber-card-hover);
+
+}
+
+
+
+/* =================================
+   SIDEBAR
+================================= */
+
+.sidebar-content {
+
+  background:
+    var(--sl-color-bg-sidebar);
+
+}
+
+
+.sidebar-content a[aria-current="page"] {
+
+  background:
+    #a86b00;
+
+  color:
+    #fff7dc;
+
+  border-radius:
+    8px;
+
+}
+
+
+
+/* =================================
+   CODE BLOCKS
+================================= */
+
+.expressive-code {
+
+  border-radius:
+    14px;
+
+}
+
+
+.expressive-code .frame {
+
+  background:
+    #ded8c8 !important;
+
+  border:
+    1px solid #cec19d;
+
+}
+
+
+:root[data-theme="dark"] .expressive-code .frame {
+
+  background:
+    #1e1e1e !important;
+
+  border-color:
+    #444;
+
+}
+
+
+
+/* =================================
+   INLINE CODE
+================================= */
+
+code {
+
+  border-radius:
+    5px;
+
+}
+
+
+
+/* =================================
+   LINKS
+================================= */
+
+.sl-markdown-content a {
+
+  color:
+    var(--sl-color-accent);
+
+}
+
+
+.sl-markdown-content a:hover {
+
+  color:
+    var(--sl-color-accent-high);
+
+}
+
+
+
+/* =================================
+   SELECTION
+================================= */
+
+::selection {
+
+  background:
+    rgba(216, 170, 50, 0.35);
+
+}
