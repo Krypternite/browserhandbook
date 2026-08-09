@@ -29,7 +29,33 @@ export default defineConfig({
 							slug: 'web-foundations/chapter-1'
 						}
 					]
+				},
+				{
+					label: 'Product Owner Study',
+					items: [
+						{
+							label: 'Chapter 1',
+							slug: 'product-owner/1'
+						},
+						{
+							label: 'Chapter 2',
+							slug: 'product-owner/2'
+						},
+						{
+							label: 'Chapter 3',
+							slug: 'product-owner/3'
+						},
+						{
+							label: 'Chapter 4',
+							slug: 'product-owner/4'
+						}
+					]
+				},
+				{
+					label: 'Product Owner Study Plan',
+					items: [{ autogenerate: { "directory": "studyplan" } }]
 				}
+
 			],
 		}),
 	],
